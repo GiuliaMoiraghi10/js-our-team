@@ -49,20 +49,34 @@ let mail = document.getElementById('mailUtente')
 for (let i = 0; i < teamMembers.length; i++) {
   console.log(teamMembers[i])
   const allTeamMembers = teamMembers[i]
+  console.log(allTeamMembers)
 
-  for (let key in allTeamMembers) {
-    console.log(key)
-  }
+  // for (let key in allTeamMembers) {
+  //   console.log(key)
+
+  const card = `
+    <div class="col">
+                    <div class="card mb-3 border-0" style="max-width: 540px;">
+                        <div class="row g-0 card-template">
+                            <div class="col-md-4">
+                                <img id="imgCard" src="${allTeamMembers.img}" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 id="nomeCognome" class="card-title name">${allTeamMembers.name}</h5>
+                                    <p id="ruoloUtente" class="card-text ruolo">${allTeamMembers.role}</p>
+                                    <p id="mailUtente" class="card-text mail">${allTeamMembers.email}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  `
+
 }
 
-// Creare funzione per creare la card
-function memberCard(member) {
-  const card = document.createElement('div');
 
-  const img = document.createElement('img');
-  img.src = member.img;
-  card.appendChild(img)
-}
+
 
 
 // Appendere elementi nel DOM
