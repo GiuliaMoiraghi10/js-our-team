@@ -36,3 +36,13 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+// Prendo elementi del DOM
+let img = document.getElementById(imgCard)
+let nome = document.getElementById(nomeCognome)
+let ruolo = document.getElementById(ruoloUtente)
+let mail = document.getElementById(mailUtente)
+
+// Ciclare array di oggetti
+// Sostituire nomi html con js
+// Appendere elementi nel DOM
