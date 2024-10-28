@@ -1,0 +1,73 @@
+/* Default */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1024px;
+    /* margin: 0 auto; */
+}
+
+/* Debug */
+
+.debug {
+    border: 2px;
+    border-color: blue;
+}
+
+/* Header */
+
+.title {
+    text-align: center;
+    padding: 20px;
+    color: rgb(230, 95, 212);
+    font-family: "Chewy";
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.subtitle {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main */
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    height: 100%;
+}
+
+.card-title {
+    font-size: 25px;
+}
+
+.card-title.name {
+    color: white;
+    font-family: "Chewy";
+}
+
+.card-text {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.card-body {
+    border: none;
+}
+
+.card-text.mail {
+    color: #4199eb;
+}
+
+.col-md-8 {
+    background-color: black;
+}
