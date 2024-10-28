@@ -38,11 +38,31 @@ const teamMembers = [
 ];
 
 // Prendo elementi del DOM
-let img = document.getElementById(imgCard)
-let nome = document.getElementById(nomeCognome)
-let ruolo = document.getElementById(ruoloUtente)
-let mail = document.getElementById(mailUtente)
+let img = document.getElementById('imgCard')
+let nome = document.getElementById('nomeCognome')
+let ruolo = document.getElementById('ruoloUtente')
+let mail = document.getElementById('mailUtente')
+
 
 // Ciclare array di oggetti
-// Sostituire nomi html con js
+
+for (let i = 0; i < teamMembers.length; i++) {
+  console.log(teamMembers[i])
+  const allTeamMembers = teamMembers[i]
+
+  for (let key in allTeamMembers) {
+    console.log(key)
+  }
+}
+
+// Creare funzione per creare la card
+function memberCard(member) {
+  const card = document.createElement('div');
+
+  const img = document.createElement('img');
+  img.src = member.img;
+  card.appendChild(img)
+}
+
+
 // Appendere elementi nel DOM
